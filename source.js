@@ -47,7 +47,7 @@ const timeGenerate = () =>{
     let minutesValue = minutes < 10 ? '0'+minutes:minutes;
 
     timeValue.innerHTML = `<span>Time : </span>${minutesValue}:${secondsValue}`
-    timeWin = minutes + ':' + seconds + ' Seconds'
+    timeWin = minutesValue + ':' + secondsValue + ' Seconds'
     if(moveCount === 8){
         clearInterval(interval)
         controls.classList.remove('hide')
