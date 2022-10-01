@@ -20,7 +20,7 @@ const items = [
     { name : "bee", image : "/images/bee.png"},
     { name : "capybara", image : "/images/capybara.png"},
     { name : "chameleon", image : "/images/chameleon.png"},
-    { name : "crocodile", image : "/images/chameleon.png"},
+    { name : "crocodile", image : "/images/crocodile.png"},
     { name : "gorilla", image : "/images/gorilla.png"},
     { name : "heliconia", image : "/images/heliconia.png"},
     { name : "ladybug", image : "/images/ladybug.png"},
@@ -53,7 +53,9 @@ const timeGenerate = () =>{
         controls.classList.remove('hide')
         stopButton.classList.add('hide')
         startButton.classList.remove('hide')
-        result.innerHTML = 'You won with : ' + timeWin
+        result.innerHTML = 'You won with ' + timeWin
+        seconds= 0
+        minutes = 0
     }
 
 };
